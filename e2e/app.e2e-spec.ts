@@ -1,14 +1,14 @@
-import { AppPage } from './app.po';
+import { NgEgretPage } from './app.po';
 
-describe('ng-forest01-a App', () => {
-  let page: AppPage;
+describe('ng-egret App', () => {
+  let page: NgEgretPage;
 
   beforeEach(() => {
-    page = new AppPage();
+    page = new NgEgretPage();
   });
 
-  it('should display welcome message', () => {
+  it('should display message saying app works', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to app!');
+    expect(page.getParagraphText()).toEqual('app works!');
   });
 });
